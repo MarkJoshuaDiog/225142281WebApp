@@ -13,39 +13,81 @@
         }
         .head {
             background: #ffd700;
+            padding: 20px;
+            border-radius: 50%;
         }
 
         .eyeball {
             background: white;
-            border-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pupil{
+            width: 5px;
+            height: 5px;
+            background: black;
+            border-radius: 50;
+            display: block;
         }
 
         .beak {
             color: orange;
+            font-size: 30px;
+            margin-top: 10px;
         }
 
         .body{
             background: #8b4513;
+            width: 120px;
+            height: 200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .wing {
             color: #cd853f;
+            font-size: 40px;
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            transform: translateY(-50%);
         }
-
+        .drumsticks{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: -20px;
+        }
         .drumstick{
             color: #8b4513;
+            font-size: 30px;
         }
 
         .drumstick-right {
             color: #8b4513;
+            font-size: 30px;
+            transform: rotate(30deg);
         }
 
         .canvas {
             background: url('https://www.example.com/your-image.jpg') no-repeat center center;
             background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     </style>
-    <div class="canvas background">
+    </head>
+    <body>
+    <div class="canvas">
      <div class="air background"></div>   
      <div class="head">
         <div class="eyeball">
